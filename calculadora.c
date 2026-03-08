@@ -12,19 +12,18 @@ double total;
 int main(){
     int opcion;
     do{
-        printf("1.sumar\n");
+        printf("\n 1.sumar\n");
         printf("2.restar\n");
         printf("3.multiplicar\n");
         printf("4.dividir\n");
         printf("5.salir\n");
         scanf("%d", &opcion);
         switch (opcion){
-            case 1: sumar ();break;
+            case 1: sumar ();printf("Total: %d",total);break;
             case 2: restar ();break;
             case 3: multiplicar ();break;
             case 4: dividir ();break;
-        }
-
+        };
     } while (opcion !=5);
 
         return 0;
@@ -32,11 +31,12 @@ int main(){
 
 double sumar(){
     double x, y;
-    printf("Digite el primer numero");
+    printf("Digite el primer numero ");
     scanf("%d", &x);
-    printf("Digite el segundo numero");
+    printf("Digite el segundo numero ");
     scanf("%d", &y);
-    total= x + y;
+    total= x+ y;
+    
 }
 double restar(){
     double x, y;
